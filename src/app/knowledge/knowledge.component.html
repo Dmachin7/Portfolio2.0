@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="inner-container">
+        <div class="info left">
+            <h1>Frontend</h1>
+            <p class="subtitle" >Languages I Know:</p>
+            <div class="wrapper">
+
+            <div *ngFor="let skill of skills" class="skills">
+                <img class="skill-image" src="{{skill.image}}" alt="{{skill.name}}">
+                <p class="skill-name" >{{skill.name}}</p>
+            </div>
+        </div>
+            
+        </div>
+        <div class="line"></div>
+        <div class="info middle">
+            
+        </div>
+        <div class="line"></div>
+        <div class="info right">
+            
+        </div>
+    </div>
+</div>

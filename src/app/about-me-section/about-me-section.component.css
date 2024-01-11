@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center !important;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(110, 231, 183); 
+    /* outline: 2px solid red; */
+}
+
+h3 {
+    padding: 1rem;
+    margin: 0;
+    font-size: 45px;
+    color: white;
+    scale: .8;
+    opacity: 0;
+    transform: translateY(20%);
+    animation: fadeIn ease-in-out forwards;
+    animation-timing-function: ease-out;
+    animation-timeline: view();
+    animation-range: entry;
+    /* outline: 1px solid red; */
+
+}
+
+p {
+    color: white;
+    width: 600px;
+    text-align: center;
+    height: 200px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 20px;
+    line-height: 1.5;
+    /* outline: 2px solid blue; */
+    scale: .8;
+    opacity: 0;
+    transform: translateY(20%);
+    animation: fadeIn ease-in-out forwards;
+    animation-timing-function: ease-out;
+    animation-timeline: view();
+    animation-range: entry;
+}
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
