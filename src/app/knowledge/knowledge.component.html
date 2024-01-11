@@ -1,24 +1,31 @@
 <div class="container">
     <div class="inner-container">
+        <h1 class="title">As a Fullstack Developer I know....</h1>
         <div class="info left">
-            <h1>Frontend</h1>
-            <p class="subtitle" >Languages I Know:</p>
+            <h2>Frontend</h2>
             <div class="wrapper">
-
             <div *ngFor="let skill of skills" class="skills">
                 <img class="skill-image" src="{{skill.image}}" alt="{{skill.name}}">
                 <p class="skill-name" >{{skill.name}}</p>
             </div>
         </div>
-            
+        <h2>Backend</h2>
+        <div class="wrapper">
+            <div *ngFor="let back of backend" class="skills">
+                <img class="skill-image" src="{{back.image}}" alt="{{back.name}}">
+                <p class="skill-name" >{{back.name}}</p>
+            </div>
         </div>
-        <div class="line"></div>
-        <div class="info middle">
-            
+        <h2>Tools</h2>
+        <div class="wrapper">
+            <div *ngFor="let tool of tools" class="skills">
+                <img class="skill-image" src="{{tool.image}}" alt="{{tool.name}}">
+                <p class="skill-name" >{{tool.name}}</p>
+            </div>
         </div>
-        <div class="line"></div>
-        <div class="info right">
-            
-        </div>
+     
+
+
+
     </div>
 </div>

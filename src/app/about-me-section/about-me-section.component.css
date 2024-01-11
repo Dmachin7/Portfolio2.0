@@ -13,7 +13,7 @@ h3 {
     padding: 1rem;
     margin: 0;
     font-size: 45px;
-    color: white;
+    color: black;
     scale: .8;
     opacity: 0;
     transform: translateY(20%);
@@ -26,13 +26,13 @@ h3 {
 }
 
 p {
-    color: white;
-    width: 600px;
+    color: black;
+    max-width: 600px;
     text-align: center;
     height: 200px;
     margin: 0 auto;
     padding: 1rem;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.5;
     /* outline: 2px solid blue; */
     scale: .8;
@@ -48,5 +48,11 @@ p {
         scale: 1;
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    p {
+        font-size: 20px;
     }
 }

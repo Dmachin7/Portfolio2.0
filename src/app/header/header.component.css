@@ -45,14 +45,44 @@ a {
     transition: all .3s ease-out;
 }
 
-.nav-link {
+.svg {
     filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(259deg) brightness(103%) contrast(101%);
 }
 
 .nav-link img {
     width: 35px;
-    outline: 2px solid white;
 }
 
+.linkedin img {
+ width: 50px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .logo img {
+        width: 90px;
+    }
+
+    .nav-link img {
+        width: 50px;
+        display: none;
+    }
+
+
+    li {
+        padding: 0
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .header {
+        justify-content: space-between;
+        width: 100%;
+        /* outline: 2px solid red; */
+    }
+    
+}
 
 

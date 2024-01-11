@@ -24,3 +24,40 @@ img {
     border-radius: 50%;
     background-color: white;  
 }
+
+@media screen and (max-width: 500px) {
+    .container {
+        /* outline: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        text-align: center;
+    }
+    h1 {
+        /* outline: 2px solid red; */
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    h3 {
+        /* outline: 2px solid red; */
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        padding: 1rem;
+        display: none;
+    }
+
+    img {
+        width: 150px;
+    };
+}
