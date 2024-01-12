@@ -1,31 +1,68 @@
-<div class="container">
-    <div class="inner-container">
-        <h1 class="title">As a Fullstack Developer I know....</h1>
-        <div class="info left">
-            <h2>Frontend</h2>
-            <div class="wrapper">
-            <div *ngFor="let skill of skills" class="skills">
-                <img class="skill-image" src="{{skill.image}}" alt="{{skill.name}}">
-                <p class="skill-name" >{{skill.name}}</p>
-            </div>
+<!-- <div class="container">
+  <div class="inner-container">
+    <h1 class="title">As a Fullstack Developer I know....</h1>
+    <div class="info left">
+      <h2>Frontend</h2>
+      <div class="wrapper logos">
+        <div *ngFor="let skill of skills" class="skills logos-slide">
+          <img
+            class="skill-image"
+            src="{{ skill.image }}"
+            alt="{{ skill.name }}"
+          />
+          <p class="skill-name">{{ skill.name }}</p>
         </div>
-        <h2>Backend</h2>
-        <div class="wrapper">
-            <div *ngFor="let back of backend" class="skills">
-                <img class="skill-image" src="{{back.image}}" alt="{{back.name}}">
-                <p class="skill-name" >{{back.name}}</p>
-            </div>
+      </div>
+      <h2>Backend</h2>
+      <div class="wrapper logos">
+        <div *ngFor="let back of backend" class="skills logos-slide">
+          <img
+            class="skill-image {{back.name}}"
+            src="{{ back.image }}"
+            alt="{{ back.name }}"
+          />
+          <p class="skill-name">{{ back.name }}</p>
+          </div>
+      
+      </div>
+      <h2>Tools</h2>
+      <div class="wrapper logos">
+        <div *ngFor="let tool of tools" class="skills logos-slide">
+          <img
+            class="skill-image"
+            src="{{ tool.image }}"
+            alt="{{ tool.name }}"
+          />
+          <p class="skill-name">{{ tool.name }}</p>
         </div>
-        <h2>Tools</h2>
-        <div class="wrapper">
-            <div *ngFor="let tool of tools" class="skills">
-                <img class="skill-image" src="{{tool.image}}" alt="{{tool.name}}">
-                <p class="skill-name" >{{tool.name}}</p>
-            </div>
-        </div>
-     
-
-
-
+      </div>
     </div>
+  </div>
+</div> -->
+
+<h2 class="title">Skills &  Technologies</h2>
+
+<h2>Frontend</h2>
+<div class="logos">
+  <div class="logos-slide2">
+    <img *ngFor="let tool of skills" class="skill-image" src="{{ tool.image }}" alt="{{ tool.name }}" />
+    <!-- <p *ngFor="let tool of skills" class="skill-name">{{ tool.name }}</p> -->
+ </div>
 </div>
+
+<h2>Backend</h2>
+<div class="logos">
+  <div class="logos-slide">
+    <img *ngFor="let tool of backend" class="skill-image" src="{{ tool.image }}" alt="{{ tool.name }}" />
+    <!-- <p *ngFor="let tool of tools" class="skill-name">{{ tool.name }}</p> -->
+  </div>
+</div>
+
+<h2>Tools</h2>
+<div class="logos">
+  <div class="logos-slide3">
+    <img *ngFor="let tool of tools" class="skill-image" src="{{ tool.image }}" alt="{{ tool.name }}" />
+     <!-- <p *ngFor="let tool of tools" class="skill-name">{{ tool.name }}</p> -->
+   </div> 
+ </div>
+
