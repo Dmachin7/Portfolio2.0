@@ -70,7 +70,7 @@ p {
 
 .project:hover {
     img {
-        filter: blur(3px);
+        filter: blur(3px) brightness(0.5);
         transition: all .3s ease-out;
     }
 }
@@ -79,6 +79,33 @@ p {
     p {
         display: block;
         transition: all .3s ease-out;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 20px;
+    }
+    .project {
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+        /* outline: 3px solid orange; */
+    }
+
+    .container {
+        height: auto;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 50%;
+        font-size: 20px;
+        color: white;
+        display: none;
+        transition: all .3s ease-in;
     }
 }
 

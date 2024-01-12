@@ -174,21 +174,27 @@ p {
     white-space: nowrap;
     /* transform: translateX(-100%); */
     /* outline: 2px solid blue; */
-    animation: 5s slide infinite linear;
+    animation: 15s slide infinite linear;
     position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden; 
 }
 
 .logos-slide2 {
     display: flex;
     white-space: nowrap;
-    animation: 5s slide2 infinite linear;
+    animation: 15s slide2 infinite linear;
     align-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden; 
 }
 
 .logos-slide3 {
-    animation: 4s slide3 infinite linear;
+    animation: 15s slide3 infinite linear;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden; 
 }
 
 .logo-container {
@@ -200,8 +206,12 @@ p {
     white-space: nowrap;
 }
 
-.logos-slide:hover {
+.paused {
     animation-play-state: paused;
+}
+
+.play {
+    animation-play-state: running;
 }
 
 
@@ -242,7 +252,7 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 30px;
+        font-size: 40px;
         width: 100%;
         margin-bottom: 20px;
         padding: 0;
@@ -282,7 +292,7 @@ p {
     }
    h2 {
         margin-top: none;
-        font-size: 15px;
+        font-size: 25px;
         color: white;
         display: flex;
         justify-content: center;
