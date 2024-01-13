@@ -40,29 +40,39 @@
   </div>
 </div> -->
 
-<h2 class="title">Skills &  Technologies</h2>
+<div class="container">
+  
+  <h2 class="title">Skills &  Technologies</h2>
 
-<h2>Frontend</h2>
-<div class="logos" (click)="clicked()">
-  <div class="logos-slide2" [ngClass]="status">
-    <img *ngFor="let tool of skills" class="skill-image" src="{{ tool.image }}" alt="{{ tool.name }}" />
-    <!-- <p *ngFor="let tool of skills" class="skill-name">{{ tool.name }}</p> -->
+  <h2>Frontend</h2>
+  <div class="logos" (click)="clicked()">
+<div class="inner-container" [ngClass]="status">
+    <div class="logos-slide2" *ngFor="let tool of skills" >
+      <img class="skill-image" src="{{ tool.image }}" alt="{{ tool.name }}" />
+      <p class="skill-name">{{ tool.name }}</p>
+   </div>
  </div>
-</div>
-
-<h2>Backend</h2>
-<div class="logos" (click)="clicked2()">
-  <div class="logos-slide" [ngClass]="status2">
-    <img *ngFor="let tool of backend" class="skill-image" src="{{ tool.image }}" alt="{{ tool.name }}" />
-    <!-- <p *ngFor="let tool of tools" class="skill-name">{{ tool.name }}</p> -->
   </div>
+  
+  <h2>Backend</h2>
+  <div class="logos" (click)="clicked2()">
+    <div class="inner-container-middle" [ngClass]="status2">
+    <div class="logos-slide" *ngFor="let tool of backend">
+      <img class="skill-image {{tool.name}}" src="{{ tool.image }}" alt="{{ tool.name }}" />
+      <p class="skill-name">{{ tool.name }}</p>
+    </div>
+  </div>
+  </div>
+  
+  <h2>Tools</h2>
+  <div class="logos" (click)="clicked3()">
+  <div class="inner-container-bottom" [ngClass]="status3">
+    <div *ngFor="let tool of tools"  class="logos-slide3">
+      <img class="skill-image" src="{{ tool.image }}" alt="{{ tool.name }}" />
+       <p  class="skill-name">{{ tool.name }}</p>
+     </div> 
+    </div>
+   </div>
 </div>
 
-<h2>Tools</h2>
-<div class="logos" (click)="clicked3()">
-  <div class="logos-slide3" [ngClass]="status3">
-    <img *ngFor="let tool of tools" class="skill-image" src="{{ tool.image }}" alt="{{ tool.name }}" />
-     <!-- <p *ngFor="let tool of tools" class="skill-name">{{ tool.name }}</p> -->
-   </div> 
- </div>
 

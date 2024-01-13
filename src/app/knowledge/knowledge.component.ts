@@ -33,6 +33,10 @@ export class KnowledgeComponent implements OnInit {
       "name": "Angular"
     },
     {
+      "image": "../../assets/react.png",
+      "name": "React"
+    },
+    {
       "image": "../../assets/HTML.png",
       "name": "HTML"
     },
@@ -55,11 +59,11 @@ export class KnowledgeComponent implements OnInit {
     {
       "image": "../../assets/angular.png",
       "name": "Angular"
+    },
+    {
+      "image": "../../assets/react.png",
+      "name": "React"
     }
-    // {
-    //   "image": "../../assets/react.png",
-    //   "name": "React"
-    // }
   ]
 
   tools: any[] = [
@@ -94,6 +98,30 @@ export class KnowledgeComponent implements OnInit {
     {
       "image": "../../assets/Postman.svg",
       "name": "Postman"
+    },
+    {
+      "image": "../../assets/AWS.png",
+      "name": "AWS"
+    },
+    {
+      "image": "../../assets/TailwindCSS.png",
+      "name": "TailwindCSS"
+    },
+    {
+      "image": "../../assets/VSCODE.svg",
+      "name": "VS Code"
+    },
+    {
+      "image": "../../assets/Postman.svg",
+      "name": "Postman"
+    },
+    {
+      "image": "../../assets/AWS.png",
+      "name": "AWS"
+    },
+    {
+      "image": "../../assets/TailwindCSS.png",
+      "name": "TailwindCSS"
     }
   ]
 
@@ -137,6 +165,22 @@ export class KnowledgeComponent implements OnInit {
       {
         "image": "../../assets/MongoDB.svg",
         "name": "MongoDB"
+      },
+      {
+        "image": "../../assets/Django.png",
+        "name": "Django"
+      },
+      {
+        "image": "../../assets/PostgreSQL.png",
+        "name": "PostgreSQL"
+      },
+      {
+        "image": "../../assets/NodeJS.png",
+        "name": "NodeJS"
+      },
+      {
+        "image": "../../assets/NPM.png",
+        "name": "NPM"
       }
 
     

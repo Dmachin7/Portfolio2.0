@@ -3,9 +3,14 @@
     <div class="inner-container">
         <div class="project" *ngFor="let project of projects">
             <div class="wrapper">
-                <img src="{{project.image}}" alt="{{project.name}}">
-                <p>{{project.description}}</p>
-                <h2>{{project.name}}</h2>
+                <img class="image-container" src="{{project.image}}" alt="{{project.name}}">
+                <img class="icon" src="{{project.icon}}" alt="{{project.icon}}">
+                     <h2>{{project.name}}</h2>
+                     <div class="inner">
+                        <a href="#"><img class="github"  src="../../assets/github.png" alt="Github"></a>
+                        <a href="#"><button class="web">Live Site</button></a>
+                        <p>{{project.description}}</p>
+                     </div>
             </div>
         </div>
     </div>
