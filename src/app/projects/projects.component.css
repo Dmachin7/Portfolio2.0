@@ -102,9 +102,9 @@ h2 {
 }
 
 .web {
-    width: 100px;
+    /* width: 100px; */
     position: relative;
-    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(343deg) brightness(117%) contrast(101%);
+    /* filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(343deg) brightness(117%) contrast(101%); */
     /* transform: translateY(-300px); */
     transform: translate(200px, -200px);
     display: flex;
@@ -112,7 +112,8 @@ h2 {
     transition: all .3s ease-in;
     padding: 1rem;
     border-radius: 20px;
-
+    background-color: transparent;
+    color: white;
 }
 
 a {
@@ -193,9 +194,21 @@ p {
     }
 }
 
-.web:hover {
-    background-color: white;
-    color: white;
+.button {
+    border-width: 2px;
+    border: solid white;
+    padding: 1rem;
+    transition: all .3s ease-in;
+    font-size: 10px;
+    width: 60px;
+}
+
+.button:hover {
+    background-color: white; 
+    border: solid white;
+    color: black;
+    transition: all .3s ease-out;
+    cursor: pointer;
 }
 
 @keyframes fadeIn {
