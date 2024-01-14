@@ -199,8 +199,12 @@ p {
     border: solid white;
     padding: 1rem;
     transition: all .3s ease-in;
-    font-size: 10px;
-    width: 60px;
+    font-size: 15px;
+    width: 70px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button:hover {

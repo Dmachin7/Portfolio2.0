@@ -6,8 +6,8 @@
     text-align: center !important;
     flex-direction: column;
     width: 100%;
-    height: 500px;
-    scale: .8;
+    height: 100vh;
+    /* scale: .8; */
     opacity: 0;
     transform: translateY(20%);
     animation: fadeIn ease-in-out forwards;
@@ -19,6 +19,19 @@
     /* outline: 2px solid red; */
 }
 
+.photography {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: none;
+    transition: all .3s linear ease-in;
+}
+
+.photography:hover {
+    border-bottom: 2px solid black;
+    transition: all .3s linear ease-out;
+}
+
 h3 {
     padding: 1rem;
     margin: 0;
@@ -26,8 +39,7 @@ h3 {
     color: black;
     scale: .8;
     opacity: 0;
-    transform: translateY(20%);
-    animation: fadeIn ease-in-out forwards;
+    animation: 5s fadeIn ease-in-out forwards;
     animation-timing-function: ease-out;
     animation-timeline: view();
     animation-range: entry;
@@ -47,8 +59,7 @@ p {
     /* outline: 2px solid blue; */
     scale: .8;
     opacity: 0;
-    transform: translateY(20%);
-    animation: fadeIn ease-in-out forwards;
+    animation: 15s fadeIn ease-in-out forwards;
     animation-timing-function: ease-out;
     animation-timeline: view();
     animation-range: entry;
@@ -57,9 +68,11 @@ p {
     to {
         scale: 1;
         opacity: 1;
-        transform: translateY(0);
+        transform: translate(0);
     }
 }
+
+
 
 @media screen and (max-width: 500px) {
     p {

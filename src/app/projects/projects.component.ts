@@ -22,7 +22,7 @@ export class ProjectsComponent {
       "description": "AdventureList is a FullStack application used for keeping track of Adventures",
       "icon": `../../assets/hikerman.png`,
       "livesite": "https://adventurelist-01b3f64537ec.herokuapp.com/",
-      "github": "https://github.com/User5678953/adventure-list-frontend"
+      "github": "https://github.com/Dmachin7/AdventureList"
     },
     {
       "image": "../../assets/pavers.jpg",
