@@ -215,12 +215,6 @@ p {
   flex-direction: column;
 }
 
-.logos:hover {
-    .play {
-        animation-play-state: paused;
-    }
-}
-
 .logos-slide2 {
   width: 100%;
   height: 100px;
@@ -300,13 +294,15 @@ h2 {
   .logos {
     width: 100%;
   }
-
+p {
+  text-align: center;
+}
   @keyframes slideMobile {
-    from {
-      transform: translateX(-250%);
+    from {  
+      transform: translateX(-260%);
     }
     to {
-      transform: translateX(-53%);
+      transform: translateX(45%);
     }
   }
 
@@ -315,7 +311,7 @@ h2 {
       transform: translateX(-250%);
     }
     to {
-      transform: translateX(4%);
+      transform: translateX(-75%);
     }
   }
 
@@ -324,36 +320,51 @@ h2 {
       transform: translateX(-53%);
     }
     to {
-      transform: translateX(-209%);
+      transform: translateX(-270%);
     }
   }
 
 .logos-slide img {
-  height: 50px;
   margin: 0 40px;
 }
 
 .logos-slide2 img {
-  height: 50px;
   margin: 0 40px;
 }
 
 .logos-slide3 img {
-  height: 50px;
   margin: 0 40px;
 }
 
 .logos-slide {
   white-space: nowrap;
-  animation: 10s slideMobileReverse infinite linear;
+  /* animation: 10s slideMobileReverse infinite linear; */
   position: relative;
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
 }
 
 .logos-slide2 {
-  display: flex;
+  /* display: flex; */
   white-space: nowrap;
+  /* animation: 10s slideMobile infinite linear; */
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.logos-slide3 {
+  /* animation: 10s slideMobile2 infinite linear; */
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+.inner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: 10s slideMobile infinite linear;
   align-content: center;
   flex-direction: row;
@@ -362,13 +373,29 @@ h2 {
   -webkit-backface-visibility: hidden;
 }
 
-.logos-slide3 {
-  animation: 10s slideMobile2 infinite linear;
+.inner-container-middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 10s slideMobileReverse infinite linear;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
 }
-.inner-container {
-  overflow: hidden;
+.inner-container-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 10s slideMobile2 infinite linear;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 }
 
 .title {
@@ -396,9 +423,6 @@ h2 {
   top: 0;
 }
 
-.skill-name {
-  width: 40px;
-}
 
 p {
   color: white;
