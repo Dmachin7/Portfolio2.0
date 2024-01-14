@@ -154,7 +154,7 @@ p {
 } */
 
 .project:hover {
-    p {
+    p:is(p) {
         display: block;
         transition: all .3s ease-out;
     }
@@ -186,7 +186,7 @@ p {
     }
 }
 .project:hover {
-    p {
+    p:is(p) {
         transform: translateY(-120px);
         opacity: 1;
         scale: 1;
