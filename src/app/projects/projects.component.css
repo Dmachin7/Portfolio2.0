@@ -94,7 +94,6 @@ h2 {
         width: 50px;
         position: relative;
         filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(343deg) brightness(117%) contrast(101%);
-        transform: translate(-200px, -200px);
         display: flex;
         opacity: 0;
         transition: all .3s ease-in;
@@ -106,7 +105,6 @@ h2 {
     position: relative;
     /* filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(343deg) brightness(117%) contrast(101%); */
     /* transform: translateY(-300px); */
-    transform: translate(200px, -200px);
     display: flex;
     opacity: 0;
     transition: all .3s ease-in;
@@ -171,7 +169,7 @@ p {
 
 .project:hover {
     .github {
-        transform: translate(40px, -250px);
+        transform: translate(0, -200px);
         opacity: 1;
         scale: 1;
         transition: all .3s ease-out;
@@ -179,7 +177,7 @@ p {
 }
 .project:hover {
     .web {
-        transform: translate(-50px, -190px);
+        transform: translate(0, -200px);
         opacity: 1;
         scale: 1;
         transition: all .3s ease-out;
@@ -227,6 +225,12 @@ p {
     h2 {
         font-size: 20px;
     }
+    .project:hover {
+        p:is(p) {
+            display: block;
+            transition: all .3s ease-out;
+        }
+    }
     .inner-container {
         width: auto;
     }
@@ -257,6 +261,14 @@ p {
     .container {
         height: auto;
     }
+    .project:hover {
+        p:is(p) {
+            transform: translateY(-120px);
+            opacity: 1;
+            scale: 1;
+            transition: all .3s ease-out;
+        }
+    }
     p {
         display: flex;
         justify-content: center;
@@ -270,4 +282,3 @@ p {
 
     
 }
-

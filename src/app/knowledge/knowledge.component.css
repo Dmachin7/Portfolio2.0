@@ -340,8 +340,6 @@ p {
   white-space: nowrap;
   /* animation: 10s slideMobileReverse infinite linear; */
   position: relative;
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
 }
 
 .logos-slide2 {
@@ -351,15 +349,8 @@ p {
   align-content: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
 }
 
-.logos-slide3 {
-  /* animation: 10s slideMobile2 infinite linear; */
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-}
 .inner-container {
   width: 100%;
   display: flex;
@@ -448,5 +439,45 @@ h2 {
     scale: 1;
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+
+@media screen and (max-width: 385px) {
+  @keyframes slideMobileXS {
+    from {  
+      transform: translateX(-260%);
+    }
+    to {
+      transform: translateX(68%);
+    }
+  }
+
+  @keyframes slideMobile2XS {
+    from {
+      transform: translateX(-250%);
+    }
+    to {
+      transform: translateX(-63%);
+    }
+  }
+
+  @keyframes slideMobileReverseXS {
+    from {
+      transform: translateX(-53%);
+    }
+    to {
+      transform: translateX(-290%);
+    }
+  }
+  .inner-container {
+    animation: 10s slideMobileXS infinite linear;
+  }
+  
+  .inner-container-middle {
+    animation: 10s slideMobileReverseXS infinite linear;
+  }
+  .inner-container-bottom {
+    animation: 10s slideMobile2XS infinite linear;
   }
 }

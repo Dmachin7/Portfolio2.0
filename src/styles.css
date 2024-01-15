@@ -11,8 +11,20 @@ body {
     font-family: 'Tektur', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: black;
+}
 
+::-webkit-scrollbar-track {
+    width: 5px;
+    border: 1px solid black;
+}
 
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: white;
+}
 
 
 
