@@ -142,6 +142,7 @@ p {
     opacity: 0;
     scale: .8;
     transform: translateY(0);
+    padding: 1rem;
 }
 
 /* .project:hover {
@@ -278,6 +279,7 @@ p {
         font-size: 20px;
         color: white;
         transition: all .3s ease-in;
+        padding: 2rem;
     }
 
     
